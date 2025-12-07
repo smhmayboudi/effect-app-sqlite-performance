@@ -25,17 +25,21 @@
     "test": "vitest",
     "coverage": "vitest --coverage",
     "start": "tsx src/Program.ts",
+    "start:bun": "bun src/ProgramBun.ts",
     "perf": "tsx src/Program.ts",
     "changeset-version": "changeset version && node scripts/version.mjs",
     "changeset-publish": "pnpm build && TEST_DIST= pnpm vitest && changeset publish"
   },
   "dependencies": {
-    "effect": "latest",
     "@effect/sql": "latest",
-    "@effect/sql-sqlite-node": "latest",
+    "@effect/sql-libsql": "latest",
     "@effect/sql-sqlite-bun": "latest",
+    "@effect/sql-sqlite-node": "latest",
     "@effect/sql-sqlite-wasm": "latest",
-    "@effect/sql-libsql": "latest"
+    "@libsql/client": "^0.12.0",
+    "@sqlite.org/sqlite-wasm": "3.51.1-build2",
+    "better-sqlite3": "^11.10.0",
+    "effect": "latest"
   },
   "devDependencies": {
     "@babel/cli": "^7.24.8",
@@ -77,7 +81,5 @@
       ]
     }
   },
-  "pnpm": {
-    "patchedDependencies": {}
-  }
+  "patchedDependencies": {}
 }

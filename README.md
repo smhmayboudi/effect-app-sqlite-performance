@@ -38,6 +38,7 @@ To run the performance comparison tests:
 
 ```sh
 pnpm run start
+pnpm run start:bun
 ```
 
 The performance tests compare:

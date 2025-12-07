@@ -1,5 +1,5 @@
 import { LibsqlClient } from "@effect/sql-libsql"
-import { SqliteClient as SqliteNodeClient } from "@effect/sql-sqlite-node"
+import { SqliteClient as SqliteBunClient } from "@effect/sql-sqlite-bun"
 // import { SqliteClient as SqliteWasmClient } from "@effect/sql-sqlite-wasm"
 import { Console, Effect, Layer } from "effect"
 import { BaseClientLayer } from "./BaseClient.js"
@@ -32,10 +32,10 @@ const main = Effect.all([
   Effect.provide(
     program,
     Layer.provide(
-      TestRunnerLayer("@effect/sql-sqlite-node"),
+      TestRunnerLayer("@effect/sql-sqlite-bun"),
       Layer.provide(
-        BaseClientLayer("@effect/sql-sqlite-node"),
-        SqliteNodeClient.layer({ filename: ":memory:" })
+        BaseClientLayer("@effect/sql-sqlite-bun"),
+        SqliteBunClient.layer({ filename: ":memory:" })
       )
     )
   )

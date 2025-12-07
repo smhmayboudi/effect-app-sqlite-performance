@@ -35,6 +35,7 @@ pnpm install
 
 ```bash
 pnpm run start
+pnpm run start:bun
 ```
 
 This will execute the main performance comparison test that runs all scenarios against all database adapters.

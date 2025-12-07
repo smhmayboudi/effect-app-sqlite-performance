@@ -1,5 +1,4 @@
-import * as Clock from "effect/Clock"
-import * as Effect from "effect/Effect"
+import { Clock, Effect } from "effect"
 import type { TestResult } from "./Types.js"
 
 export const measurePerformance = <R, E>(
