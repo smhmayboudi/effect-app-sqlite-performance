@@ -19,14 +19,34 @@ export const BaseClientLayer = (name: string) =>
       const _executePerformanceScenario = (): Effect.Effect<void, unknown> => {
         return Effect.gen(function*() {
           // Create a test table
-          yield* sql`
+          yield* sql.onDialectOrElse({
+            "sqlite": () =>
+              sql`
         CREATE TABLE IF NOT EXISTS test_performance (
           id INTEGER PRIMARY KEY,
           name TEXT NOT NULL,
           value INTEGER,
           created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         )
+      `,
+            "orElse": () =>
+              sql`
+        CREATE TABLE IF NOT EXISTS test_performance (
+          id SERIAL PRIMARY KEY,
+          name TEXT NOT NULL,
+          value INTEGER,
+          created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        )
       `
+          })
+          //     yield* sql`
+          //   CREATE TABLE IF NOT EXISTS test_performance (
+          //     id SERIAL PRIMARY KEY,
+          //     name TEXT NOT NULL,
+          //     value INTEGER,
+          //     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+          //   )
+          // `
 
           // Insert some data
           for (let i = 0; i < 10; i++) {

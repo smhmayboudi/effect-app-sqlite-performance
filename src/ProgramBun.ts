@@ -1,8 +1,10 @@
 import { LibsqlClient } from "@effect/sql-libsql"
 import { SqliteClient as SqliteBunClient } from "@effect/sql-sqlite-bun"
 // import { SqliteClient as SqliteWasmClient } from "@effect/sql-sqlite-wasm"
+import { MemoryFS } from "@electric-sql/pglite"
 import { Console, Effect, Layer } from "effect"
 import { BaseClientLayer } from "./BaseClient.js"
+import { PGliteClient } from "./PGlite/index.js"
 import { TestRunner, TestRunnerLayer } from "./TestRunner.js"
 
 const program = Effect.gen(function*() {
@@ -38,7 +40,7 @@ const main = Effect.all([
         SqliteBunClient.layer({ filename: ":memory:" })
       )
     )
-  )
+  ),
   // Effect.provide(
   //   program,
   //   Layer.provide(
@@ -49,6 +51,18 @@ const main = Effect.all([
   //     )
   //   )
   // )
+  Effect.provide(
+    program,
+    Layer.provide(
+      TestRunnerLayer("@effect/pglite"),
+      Layer.provide(
+        BaseClientLayer("@effect/pglite"),
+        PGliteClient.layer({
+          fs: new MemoryFS()
+        })
+      )
+    )
+  )
 ], { concurrency: 1 })
 
 // Run the effect
