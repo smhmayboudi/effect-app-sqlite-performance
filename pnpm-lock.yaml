@@ -10,22 +10,22 @@ importers:
     dependencies:
       '@effect/experimental':
         specifier: latest
-        version: 0.57.11(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9)
+        version: 0.60.0(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0)
       '@effect/sql':
         specifier: latest
-        version: 0.48.6(@effect/experimental@0.57.11(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9))(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9)
+        version: 0.51.0(@effect/experimental@0.60.0(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0))(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0)
       '@effect/sql-libsql':
         specifier: latest
-        version: 0.38.0(@effect/experimental@0.57.11(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9))(@effect/platform@0.93.6(effect@3.19.9))(@effect/sql@0.48.6(@effect/experimental@0.57.11(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9))(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9))(effect@3.19.9)
+        version: 0.41.0(@effect/experimental@0.60.0(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0))(@effect/platform@0.93.6(effect@3.21.0))(@effect/sql@0.51.0(@effect/experimental@0.60.0(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0))(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0))(effect@3.21.0)
       '@effect/sql-sqlite-bun':
         specifier: latest
-        version: 0.49.0(@effect/experimental@0.57.11(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9))(@effect/platform@0.93.6(effect@3.19.9))(@effect/sql@0.48.6(@effect/experimental@0.57.11(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9))(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9))(effect@3.19.9)
+        version: 0.52.0(@effect/experimental@0.60.0(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0))(@effect/platform@0.93.6(effect@3.21.0))(@effect/sql@0.51.0(@effect/experimental@0.60.0(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0))(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0))(effect@3.21.0)
       '@effect/sql-sqlite-node':
         specifier: latest
-        version: 0.49.1(@effect/experimental@0.57.11(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9))(@effect/platform@0.93.6(effect@3.19.9))(@effect/sql@0.48.6(@effect/experimental@0.57.11(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9))(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9))(effect@3.19.9)
+        version: 0.52.0(@effect/experimental@0.60.0(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0))(@effect/platform@0.93.6(effect@3.21.0))(@effect/sql@0.51.0(@effect/experimental@0.60.0(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0))(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0))(effect@3.21.0)
       '@effect/sql-sqlite-wasm':
         specifier: latest
-        version: 0.49.0(@effect/experimental@0.57.11(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9))(@effect/sql@0.48.6(@effect/experimental@0.57.11(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9))(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9))(@effect/wa-sqlite@0.1.2)(effect@3.19.9)
+        version: 0.52.0(@effect/experimental@0.60.0(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0))(@effect/sql@0.51.0(@effect/experimental@0.60.0(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0))(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0))(@effect/wa-sqlite@0.1.2)(effect@3.21.0)
       '@electric-sql/pglite':
         specifier: ^0.3.14
         version: 0.3.14
@@ -40,7 +40,7 @@ importers:
         version: 11.10.0
       effect:
         specifier: latest
-        version: 3.19.9
+        version: 3.21.0
     devDependencies:
       '@babel/cli':
         specifier: ^7.24.8
@@ -68,10 +68,10 @@ importers:
         version: 0.3.2
       '@effect/language-service':
         specifier: latest
-        version: 0.60.0
+        version: 0.81.0
       '@effect/vitest':
         specifier: latest
-        version: 0.27.0(effect@3.19.9)(vitest@3.2.4(@types/node@22.19.1)(tsx@4.21.0))
+        version: 0.29.0(effect@3.21.0)(vitest@3.2.4(@types/node@22.19.1)(tsx@4.21.0))
       '@eslint/compat':
         specifier: 1.1.1
         version: 1.1.1
@@ -296,11 +296,11 @@ packages:
   '@effect/eslint-plugin@0.3.2':
     resolution: {integrity: sha512-c4Vs9t3r54A4Zpl+wo8+PGzZz3JWYsip41H+UrebRLjQ2Hk/ap63IeCgN/HWcYtxtyhRopjp7gW9nOQ2Snbl+g==}
 
-  '@effect/experimental@0.57.11':
-    resolution: {integrity: sha512-M5uug3Drs/gyTHLfA+XzcIZQGUEV/Jn5yi1POki4oZswhpzNmsVTHl4THpxAordRKwa5lFvTSlsRP684YH7pSw==}
+  '@effect/experimental@0.60.0':
+    resolution: {integrity: sha512-i5zIg7Xup2KgHyqHlYtkgqSE1bNzCL0GbbTQxrpIzKF0q/ebknOk/ox8B/gIq2vImjoEE81h/oxU+6i1NH210g==}
     peerDependencies:
-      '@effect/platform': ^0.93.6
-      effect: ^3.19.9
+      '@effect/platform': ^0.96.0
+      effect: ^3.21.0
       ioredis: ^5
       lmdb: ^3
     peerDependenciesMeta:
@@ -309,8 +309,8 @@ packages:
       lmdb:
         optional: true
 
-  '@effect/language-service@0.60.0':
-    resolution: {integrity: sha512-elJDWHG5Naq3OkilPt9ZRn56JfSA3MhXUIlDx9RWJeScHm96kZ+HkZ3eFBxqROzXwD6Q2DTtFctFwOM0+QLZEA==}
+  '@effect/language-service@0.81.0':
+    resolution: {integrity: sha512-7MYFsq9w9l2MkUw5/33fiG3YAkgnT6U1mwV0QvhokhnLhPW9cIetwAHNtXwsgr5omPQheLuflTIAFvPaZLQcPw==}
     hasBin: true
 
   '@effect/platform@0.93.6':
@@ -318,49 +318,49 @@ packages:
     peerDependencies:
       effect: ^3.19.8
 
-  '@effect/sql-libsql@0.38.0':
-    resolution: {integrity: sha512-JrQyrT16mc8ePvOtNpI1b+orLNHO0t2uWZe3mQ9+bJfytpgO2kF+p0DijUAQySr+U42kHPhF+B2hsW0sMV+skw==}
+  '@effect/sql-libsql@0.41.0':
+    resolution: {integrity: sha512-vSQpH2NwKWtcSHNYo2ZR4W4CpKOXKpRw70j9DlVq55vgol4osBgiB0Jj7T8OWGV1jT12ynWfb5FJ6fiOTsuzpg==}
     peerDependencies:
-      '@effect/experimental': ^0.57.0
-      '@effect/platform': ^0.93.0
-      '@effect/sql': ^0.48.0
-      effect: ^3.19.0
+      '@effect/experimental': ^0.60.0
+      '@effect/platform': ^0.96.0
+      '@effect/sql': ^0.51.0
+      effect: ^3.21.0
 
-  '@effect/sql-sqlite-bun@0.49.0':
-    resolution: {integrity: sha512-UjBvhDNYq1Rfgn5uQ+y0ALsef7T4Xt987U637RsPQb/KKL+jtqgl++HmLCNAuviJ663cXQiDHOBH2TxzjCMvEg==}
+  '@effect/sql-sqlite-bun@0.52.0':
+    resolution: {integrity: sha512-iqQ7SvSNxq0HLjKW5IQ29FsCTzOD1CuX1wuBEuPLLgPCvuEykEHLn4zDrs2qJ+O3CBEUm4kiCy29tmfHE7uAdw==}
     peerDependencies:
-      '@effect/experimental': ^0.57.0
-      '@effect/platform': ^0.93.0
-      '@effect/sql': ^0.48.0
-      effect: ^3.19.0
+      '@effect/experimental': ^0.60.0
+      '@effect/platform': ^0.96.0
+      '@effect/sql': ^0.51.0
+      effect: ^3.21.0
 
-  '@effect/sql-sqlite-node@0.49.1':
-    resolution: {integrity: sha512-lAh56P8YkivJ20caZFfrj/yFWas0nG2MpAp+hDaFjLnWiLoqhTZTcMS0fXFSRrrkZOQsSlNz9HCPUE9EHR587g==}
+  '@effect/sql-sqlite-node@0.52.0':
+    resolution: {integrity: sha512-yijDbly4MwxAPebvd2ZBI62qDpGdXKL96drMzflXDnjEh2JiVr/xVyy1VB0JsVxqw8IJ9TUIgOvAJWQ88oVMXA==}
     peerDependencies:
-      '@effect/experimental': ^0.57.5
-      '@effect/platform': ^0.93.4
-      '@effect/sql': ^0.48.1
-      effect: ^3.19.6
+      '@effect/experimental': ^0.60.0
+      '@effect/platform': ^0.96.0
+      '@effect/sql': ^0.51.0
+      effect: ^3.21.0
 
-  '@effect/sql-sqlite-wasm@0.49.0':
-    resolution: {integrity: sha512-qecBi30g8/bRLRPdATouIFleXlDLG5tJS8A5qU39iIG5ivYt0FKf5i/kD1+bhUFxneGlC3LLO/V4TqMJ8yWc0Q==}
+  '@effect/sql-sqlite-wasm@0.52.0':
+    resolution: {integrity: sha512-cK/PcF723J4HU0omPsDB3JHPDvq9Z4M+PtDTn4LbiySRzMR0tOG7Wmzi6MTvPJInraZzXOWSD4IB8PLPJlaABg==}
     peerDependencies:
-      '@effect/experimental': ^0.57.0
-      '@effect/sql': ^0.48.0
+      '@effect/experimental': ^0.60.0
+      '@effect/sql': ^0.51.0
       '@effect/wa-sqlite': ^0.1.2
-      effect: ^3.19.0
+      effect: ^3.21.0
 
-  '@effect/sql@0.48.6':
-    resolution: {integrity: sha512-OBIG/DYFxYTA9EXXhqi6sAcX0YLz8Huu8L+wj3a0aOSRPpHm9HkL9a5lacRPPvrVl31rKcEteGa/lO6n26gIFg==}
+  '@effect/sql@0.51.0':
+    resolution: {integrity: sha512-e7hWe46QD15eMCr4kNBMVdItIVK/WLHJG+d8DLL1FjVf5Ra82k2mwUYIXplJewVbHjt3my6GSKPPd1ZrQjVd5A==}
     peerDependencies:
-      '@effect/experimental': ^0.57.9
-      '@effect/platform': ^0.93.6
-      effect: ^3.19.8
+      '@effect/experimental': ^0.60.0
+      '@effect/platform': ^0.96.0
+      effect: ^3.21.0
 
-  '@effect/vitest@0.27.0':
-    resolution: {integrity: sha512-8bM7n9xlMUYw9GqPIVgXFwFm2jf27m/R7psI64PGpwU5+26iwyxp9eAXEsfT5S6lqztYfpQQ1Ubp5o6HfNYzJQ==}
+  '@effect/vitest@0.29.0':
+    resolution: {integrity: sha512-DvWr1aeEcaZ8mtu8hNVb4e3rEYvGEwQSr7wsNrW53t6nKYjkmjRICcvVEsXUhjoCblRHSxRsRV0TOt0+UmcvaQ==}
     peerDependencies:
-      effect: ^3.19.0
+      effect: ^3.21.0
       vitest: ^3.2.0
 
   '@effect/wa-sqlite@0.1.2':
@@ -1045,8 +1045,8 @@ packages:
     resolution: {integrity: sha512-lVPTBlFsEijJ3wuoIbMfC9QMZKfL8huHN8D/lijNKoVxPqUDNvDtXse0wafe7USSmyfKAMb1JZ3ISSr/Vgbn5w==}
     hasBin: true
 
-  '@standard-schema/spec@1.0.0':
-    resolution: {integrity: sha512-m2bOd0f2RT9k8QJx1JN85cZYyH1RqFBdlwtkSlf4tBDYLCiiZnv1fIIwacK6cqwXavOydf0NPToMQgpKq+dVlA==}
+  '@standard-schema/spec@1.1.0':
+    resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
   '@tybys/wasm-util@0.10.1':
     resolution: {integrity: sha512-9tTaPJLSiejZKx+Bmog4uSubteqTvFrVrURwkmHixBo0G4seD0zUxp98E1DzUBJxLQ3NPwXrGKDiVjwx/DpPsg==}
@@ -1417,6 +1417,10 @@ packages:
   better-sqlite3@11.10.0:
     resolution: {integrity: sha512-EwhOpyXiOEL/lKzHz9AW1msWFNzGc/z+LzeB3/jnFJpxu+th2yqvzsSWas1v9jgs9+xiXJcD5A8CJxAG2TaghQ==}
 
+  better-sqlite3@12.8.0:
+    resolution: {integrity: sha512-RxD2Vd96sQDjQr20kdP+F+dK/1OUNiVOl200vKBZY8u0vTwysfolF6Hq+3ZK2+h8My9YvZhHsF+RSGZW2VYrPQ==}
+    engines: {node: 20.x || 22.x || 23.x || 24.x || 25.x}
+
   binary-extensions@2.3.0:
     resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
     engines: {node: '>=8'}
@@ -1626,8 +1630,8 @@ packages:
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
 
-  effect@3.19.9:
-    resolution: {integrity: sha512-taMXnfG/p+j7AmMOHHQaCHvjqwu9QBO3cxuZqL2dMG/yWcEMw0ZHruHe9B49OxtfKH/vKKDDKRhZ+1GJ2p5R5w==}
+  effect@3.21.0:
+    resolution: {integrity: sha512-PPN80qRokCd1f015IANNhrwOnLO7GrrMQfk4/lnZRE/8j7UPWrNNjPV0uBrZutI/nHzernbW+J0hdqQysHiSnQ==}
 
   electron-to-chromium@1.5.266:
     resolution: {integrity: sha512-kgWEglXvkEfMH7rxP5OSZZwnaDWT7J9EoZCujhnpLbfi0bbNtRkgdX2E3gt0Uer11c61qCYktB3hwkAS325sJg==}
@@ -1983,11 +1987,12 @@ packages:
 
   glob@10.5.0:
     resolution: {integrity: sha512-DfXN8DfhJ7NH3Oe7cFmu3NCu1wKbkReJ8TorzSAFbSKrlNaQSKfIzqYqVY8zlbs2NLBbWpRiU52GX2PbaBVNkg==}
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
     hasBin: true
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
-    deprecated: Glob versions prior to v9 are no longer supported
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   globals@14.0.0:
     resolution: {integrity: sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==}
@@ -2409,8 +2414,8 @@ packages:
     resolution: {integrity: sha512-P0efT1C9jIdVRefqjzOQ9Xml57zpOXnIuS+csaB4MdZbTdmGDLo8XhzBG1N7aO11gKDDkJvBLULeFTo46wwreA==}
     hasBin: true
 
-  msgpackr@1.11.5:
-    resolution: {integrity: sha512-UjkUHN0yqp9RWKy0Lplhh+wlpdt9oQBYgULZOiFhV3VclSF1JnSQWZ5r9gORQlNYaUKQoR8itv7g7z1xDDuACA==}
+  msgpackr@1.11.9:
+    resolution: {integrity: sha512-FkoAAyyA6HM8wL882EcEyFZ9s7hVADSwG9xrVx3dxxNQAtgADTrJoEWivID82Iv1zWDsv/OtbrrcZAzGzOMdNw==}
 
   multipasta@0.2.7:
     resolution: {integrity: sha512-KPA58d68KgGil15oDqXjkUBEBYc00XvbPj5/X+dyzeo/lWm9Nc25pQRlf1D+gv4OpK7NM0J1odrbu9JNNGvynA==}
@@ -2612,6 +2617,7 @@ packages:
   prebuild-install@7.1.3:
     resolution: {integrity: sha512-8Mf2cbV7x1cXPUILADGI3wuhfqWvtiLA1iclTDbFRZkgRQS0NqsPZphna9V+HyTEadheuPmjaJMsbzKQFOzLug==}
     engines: {node: '>=10'}
+    deprecated: No longer maintained. Please contact the author of the relevant native addon; alternatives are available.
     hasBin: true
 
   prelude-ls@1.2.1:
@@ -3483,64 +3489,64 @@ snapshots:
       '@dprint/typescript': 0.91.8
       prettier-linter-helpers: 1.0.0
 
-  '@effect/experimental@0.57.11(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9)':
+  '@effect/experimental@0.60.0(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0)':
     dependencies:
-      '@effect/platform': 0.93.6(effect@3.19.9)
-      effect: 3.19.9
+      '@effect/platform': 0.93.6(effect@3.21.0)
+      effect: 3.21.0
       uuid: 11.1.0
 
-  '@effect/language-service@0.60.0': {}
+  '@effect/language-service@0.81.0': {}
 
-  '@effect/platform@0.93.6(effect@3.19.9)':
+  '@effect/platform@0.93.6(effect@3.21.0)':
     dependencies:
-      effect: 3.19.9
+      effect: 3.21.0
       find-my-way-ts: 0.1.6
-      msgpackr: 1.11.5
+      msgpackr: 1.11.9
       multipasta: 0.2.7
 
-  '@effect/sql-libsql@0.38.0(@effect/experimental@0.57.11(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9))(@effect/platform@0.93.6(effect@3.19.9))(@effect/sql@0.48.6(@effect/experimental@0.57.11(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9))(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9))(effect@3.19.9)':
+  '@effect/sql-libsql@0.41.0(@effect/experimental@0.60.0(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0))(@effect/platform@0.93.6(effect@3.21.0))(@effect/sql@0.51.0(@effect/experimental@0.60.0(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0))(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0))(effect@3.21.0)':
     dependencies:
-      '@effect/experimental': 0.57.11(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9)
-      '@effect/platform': 0.93.6(effect@3.19.9)
-      '@effect/sql': 0.48.6(@effect/experimental@0.57.11(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9))(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9)
+      '@effect/experimental': 0.60.0(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0)
+      '@effect/platform': 0.93.6(effect@3.21.0)
+      '@effect/sql': 0.51.0(@effect/experimental@0.60.0(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0))(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0)
       '@libsql/client': 0.12.0
-      effect: 3.19.9
+      effect: 3.21.0
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
 
-  '@effect/sql-sqlite-bun@0.49.0(@effect/experimental@0.57.11(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9))(@effect/platform@0.93.6(effect@3.19.9))(@effect/sql@0.48.6(@effect/experimental@0.57.11(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9))(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9))(effect@3.19.9)':
+  '@effect/sql-sqlite-bun@0.52.0(@effect/experimental@0.60.0(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0))(@effect/platform@0.93.6(effect@3.21.0))(@effect/sql@0.51.0(@effect/experimental@0.60.0(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0))(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0))(effect@3.21.0)':
     dependencies:
-      '@effect/experimental': 0.57.11(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9)
-      '@effect/platform': 0.93.6(effect@3.19.9)
-      '@effect/sql': 0.48.6(@effect/experimental@0.57.11(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9))(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9)
-      effect: 3.19.9
+      '@effect/experimental': 0.60.0(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0)
+      '@effect/platform': 0.93.6(effect@3.21.0)
+      '@effect/sql': 0.51.0(@effect/experimental@0.60.0(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0))(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0)
+      effect: 3.21.0
 
-  '@effect/sql-sqlite-node@0.49.1(@effect/experimental@0.57.11(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9))(@effect/platform@0.93.6(effect@3.19.9))(@effect/sql@0.48.6(@effect/experimental@0.57.11(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9))(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9))(effect@3.19.9)':
+  '@effect/sql-sqlite-node@0.52.0(@effect/experimental@0.60.0(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0))(@effect/platform@0.93.6(effect@3.21.0))(@effect/sql@0.51.0(@effect/experimental@0.60.0(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0))(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0))(effect@3.21.0)':
     dependencies:
-      '@effect/experimental': 0.57.11(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9)
-      '@effect/platform': 0.93.6(effect@3.19.9)
-      '@effect/sql': 0.48.6(@effect/experimental@0.57.11(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9))(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9)
-      better-sqlite3: 11.10.0
-      effect: 3.19.9
+      '@effect/experimental': 0.60.0(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0)
+      '@effect/platform': 0.93.6(effect@3.21.0)
+      '@effect/sql': 0.51.0(@effect/experimental@0.60.0(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0))(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0)
+      better-sqlite3: 12.8.0
+      effect: 3.21.0
 
-  '@effect/sql-sqlite-wasm@0.49.0(@effect/experimental@0.57.11(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9))(@effect/sql@0.48.6(@effect/experimental@0.57.11(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9))(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9))(@effect/wa-sqlite@0.1.2)(effect@3.19.9)':
+  '@effect/sql-sqlite-wasm@0.52.0(@effect/experimental@0.60.0(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0))(@effect/sql@0.51.0(@effect/experimental@0.60.0(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0))(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0))(@effect/wa-sqlite@0.1.2)(effect@3.21.0)':
     dependencies:
-      '@effect/experimental': 0.57.11(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9)
-      '@effect/sql': 0.48.6(@effect/experimental@0.57.11(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9))(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9)
+      '@effect/experimental': 0.60.0(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0)
+      '@effect/sql': 0.51.0(@effect/experimental@0.60.0(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0))(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0)
       '@effect/wa-sqlite': 0.1.2
-      effect: 3.19.9
+      effect: 3.21.0
 
-  '@effect/sql@0.48.6(@effect/experimental@0.57.11(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9))(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9)':
+  '@effect/sql@0.51.0(@effect/experimental@0.60.0(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0))(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0)':
     dependencies:
-      '@effect/experimental': 0.57.11(@effect/platform@0.93.6(effect@3.19.9))(effect@3.19.9)
-      '@effect/platform': 0.93.6(effect@3.19.9)
-      effect: 3.19.9
+      '@effect/experimental': 0.60.0(@effect/platform@0.93.6(effect@3.21.0))(effect@3.21.0)
+      '@effect/platform': 0.93.6(effect@3.21.0)
+      effect: 3.21.0
       uuid: 11.1.0
 
-  '@effect/vitest@0.27.0(effect@3.19.9)(vitest@3.2.4(@types/node@22.19.1)(tsx@4.21.0))':
+  '@effect/vitest@0.29.0(effect@3.21.0)(vitest@3.2.4(@types/node@22.19.1)(tsx@4.21.0))':
     dependencies:
-      effect: 3.19.9
+      effect: 3.21.0
       vitest: 3.2.4(@types/node@22.19.1)(tsx@4.21.0)
 
   '@effect/wa-sqlite@0.1.2': {}
@@ -4045,7 +4051,7 @@ snapshots:
 
   '@sqlite.org/sqlite-wasm@3.51.1-build2': {}
 
-  '@standard-schema/spec@1.0.0': {}
+  '@standard-schema/spec@1.1.0': {}
 
   '@tybys/wasm-util@0.10.1':
     dependencies:
@@ -4436,6 +4442,11 @@ snapshots:
       bindings: 1.5.0
       prebuild-install: 7.1.3
 
+  better-sqlite3@12.8.0:
+    dependencies:
+      bindings: 1.5.0
+      prebuild-install: 7.1.3
+
   binary-extensions@2.3.0:
     optional: true
 
@@ -4636,9 +4647,9 @@ snapshots:
 
   eastasianwidth@0.2.0: {}
 
-  effect@3.19.9:
+  effect@3.21.0:
     dependencies:
-      '@standard-schema/spec': 1.0.0
+      '@standard-schema/spec': 1.1.0
       fast-check: 3.23.2
 
   electron-to-chromium@1.5.266: {}
@@ -5602,7 +5613,7 @@ snapshots:
       '@msgpackr-extract/msgpackr-extract-win32-x64': 3.0.3
     optional: true
 
-  msgpackr@1.11.5:
+  msgpackr@1.11.9:
     optionalDependencies:
       msgpackr-extract: 3.0.3
 
